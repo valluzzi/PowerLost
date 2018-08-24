@@ -1,0 +1,48 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="sms_enabled"
+        android:summary="Abilita l'invio di SMS.\nDi norma abilitato.\nDisabilitare se si vuole evitare l'invio di SMS durante i Test."
+        android:title="Abilitazione SMS"
+        android:icon="@drawable/ic_check_circle_black_24dp" />
+
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:defaultValue="123456789"
+        android:inputType="phone"
+        android:key="dest1"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Destinatario SMS #1"
+        android:icon="@drawable/ic_phone_android_black_24dp"/>
+
+    <EditTextPreference
+        android:defaultValue=""
+        android:inputType="phone"
+        android:key="dest2"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Destinatario SMS #2 (vuoto se inutilizzato)"
+        android:icon="@drawable/ic_phone_android_black_24dp"/>
+
+    <EditTextPreference
+        android:title="Blackout:Testo del messaggio"
+        android:defaultValue="Blackout!"
+        android:key="blackout"
+        android:selectAllOnFocus="true"
+        android:icon="@drawable/ic_flash_off_black_24dp"/>
+
+    <EditTextPreference
+        android:title="Ritorno corrente:Testo del messaggio"
+        android:defaultValue="La corrente è tornata"
+        android:key="resume"
+        android:selectAllOnFocus="true"
+        android:icon="@drawable/ic_flash_on_black_24dp"/>
+
+</PreferenceScreen>

@@ -1,0 +1,20 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:title="Autore"
+        android:summary="PowerLost made by Valerio Luzzi. valluzzi@gmail.com"
+        android:singleLine="true"
+        android:enabled="true"
+        android:selectable="false"
+        android:icon="@drawable/ic_account_circle_black_24dp" />
+
+    <Preference
+        android:title="Icona di lancio"
+        android:summary="CC 3.0 BY.Icon made by Bogdan Rosu from www.flaticon.com"
+        android:enabled="true"
+        android:selectable="false"
+        android:icon="@drawable/ic_power_cord" />
+
+
+
+</PreferenceScreen>
